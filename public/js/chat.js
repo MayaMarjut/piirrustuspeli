@@ -15,11 +15,11 @@ window.addEventListener('load', () => {
     const $canvasButtonsRow = document.getElementById('canvasButtonsRow')
 
     //StatingScreen
-    $startingScreen.addEventListener('submit', function(event) {
-        event.preventDefault()
-        document.getElementById("tervetuloa").innerHTML = "Anna nimimerkki!";
-        // $loginForm.style.display == "block"
-    })
+    // $startingScreen.addEventListener('submit', function(event) {
+    //     event.preventDefault()
+    //     document.getElementById("tervetuloa").innerHTML = "Anna nimimerkki!";
+    //     // $loginForm.style.display == "block"
+    // })
 
     // function Startgame() {
     //     // const otsikko = document.getElementsById('tervetuloa');
