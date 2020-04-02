@@ -23,3 +23,16 @@ input[type="submit"] {
 .jumbotron {
     margin: 100px;
 }
+.card {
+    background-color: white;
+    width: 300px;
+    justify-content: center;
+    /*centers items on the line (the x-axis by default)*/
+    align-items: center;
+    /*centers items on the cross-axis (y by default)*/
+    position: relative;
+    display: flex;
+}
+#loginform {
+    display:none;
+}

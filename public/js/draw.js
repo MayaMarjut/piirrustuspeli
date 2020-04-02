@@ -49,6 +49,14 @@ function onResize() {
     state.refresh()
 }
 
+function Startgame() {
+    // const otsikko = document.getElementsById('tervetuloa');
+    document.getElementById("tervetuloa").innerHTML = "Anna nimimerkki!";
+    // otsikko.innerHTML("Anna nimimerkki");
+    $loginForm.style.display == "block";
+
+}
+
 function onPageLoad() {
     // Canvas
     initCanvas()
@@ -112,6 +120,8 @@ function onPageLoad() {
         })
     }
 }
+
+
 
 function undo() {
     if (state.undoStack.length >= 1) {

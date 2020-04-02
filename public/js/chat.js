@@ -5,6 +5,7 @@ let username;
 
 window.addEventListener('load', () => {
 
+    const $startingScreen = document.getElementById('startingScreen')
     const $loginForm = document.getElementById('loginForm')
     const $nameInput = document.getElementById('nameInput')
     const $messageInput = document.getElementById('messageInput');
@@ -12,6 +13,21 @@ window.addEventListener('load', () => {
     const $messagesContainer = document.getElementById('messagesContainer')
     const $canvas = document.getElementById('canvas')
     const $canvasButtonsRow = document.getElementById('canvasButtonsRow')
+
+    //StatingScreen
+    $startingScreen.addEventListener('submit', function(event) {
+        event.preventDefault()
+        document.getElementById("tervetuloa").innerHTML = "Anna nimimerkki!";
+        // $loginForm.style.display == "block"
+    })
+
+    // function Startgame() {
+    //     // const otsikko = document.getElementsById('tervetuloa');
+    //     document.getElementById("tervetuloa").innerHTML = "Anna nimimerkki!";
+    //     // otsikko.innerHTML("Anna nimimerkki");
+    //     $loginForm.style.display == "block";
+
+    // }
     
     // Login
     $loginForm.addEventListener('submit', function(event) {

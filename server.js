@@ -99,6 +99,7 @@ app.get('/lobby', (req, res) => {
         namespaces: namespaces
     })
 })
+
 app.get('/',     (req, res) => res.redirect('/lobby'))
 app.get('/draw', (req, res) => res.redirect('/lobby'))
 
