@@ -14,20 +14,6 @@ window.addEventListener('load', () => {
     const $canvas = document.getElementById('canvas')
     const $canvasButtonsRow = document.getElementById('canvasButtonsRow')
 
-    //StatingScreen
-    // $startingScreen.addEventListener('submit', function(event) {
-    //     event.preventDefault()
-    //     document.getElementById("tervetuloa").innerHTML = "Anna nimimerkki!";
-    //     // $loginForm.style.display == "block"
-    // })
-
-    // function Startgame() {
-    //     // const otsikko = document.getElementsById('tervetuloa');
-    //     document.getElementById("tervetuloa").innerHTML = "Anna nimimerkki!";
-    //     // otsikko.innerHTML("Anna nimimerkki");
-    //     $loginForm.style.display == "block";
-
-    // }
     
     // Login
     $loginForm.addEventListener('submit', function(event) {
@@ -35,6 +21,8 @@ window.addEventListener('load', () => {
         // Login with `name`
         let name = $nameInput.value;
         login(name)
+
+        // TÄÄ ON KOMMENTOITU ULOS
 
         // Remove the login form and show other UI components
         $loginForm.remove()
